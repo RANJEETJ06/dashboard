@@ -1,0 +1,69 @@
+@import "../../../global.scss";
+.navbar{
+    display: flex;
+    height: 50px;
+    border-bottom: 0.5px solid $s;
+    align-items: center;
+    font-size: 14px;
+    color: $maincolor;
+    .wrapper{
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        justify-content: space-between;
+        width: 100%;
+        .search{
+            display: flex;
+            align-items: center;
+            border: 0.5px solid lightgray;
+            padding: 5px;
+            border-radius: 10px;
+            input{
+                border: none;
+                outline: none;
+                background-color: transparent;
+                &::placeholder{
+                    font-size: 12px;
+                }
+                &:hover{
+                    font-weight: bolder;
+                    transition: all 0.3s ease;
+                }
+            }
+        }
+        .items{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            .item{
+                display: flex;
+                align-items: center;
+                margin-right: 20px;
+                position: relative;
+                .icon{
+                    font-size: 20px;
+                }
+                .avatar{
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50%;
+                }
+                .counter{
+                    height: 15px;
+                    width: 15px;
+                    border-radius: 50%;
+                    background-color: red;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 7px;
+                    font-weight: bold;
+                    position: absolute;
+                    top: -5px;
+                    right: -5px;
+                }
+            }
+        }
+    }
+}
