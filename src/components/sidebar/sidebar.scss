@@ -13,6 +13,7 @@
             font-size: 20px;
             font-weight: bold;
             color: $maincolor;
+            cursor: pointer;
         }
     }
     hr{
@@ -25,6 +26,61 @@
             list-style: none;
             margin: 0;
             padding: 0;
+            .title{
+                font-size: 10px;
+                font-weight: bold;
+                color: #999;
+                margin-bottom: 5px;
+                margin: 10px;
+            }
+            li{
+                display: flex;
+                align-items: center;
+                margin: 5px;
+                padding-left: 5px;
+                cursor: pointer;
+                &:hover{
+                    transition: all 0.5s ease;
+                    background-color: #ece8ff;
+                    border-radius: 7px;
+                }
+                .icons{
+                    font-size: 18px;
+                    color: #72a3e7;
+                }
+                span{
+                    font-size: 13px;
+                    font-weight: bold;
+                    color: grey;
+                    margin: 10px;
+                }
+            }
+        }
+    }
+    .bottom{
+        display: flex;
+        align-items: center;
+        margin: 10px;
+
+        .colorOption{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid $maincolor;
+            cursor: pointer;
+            margin: 5px;
+            &:nth-child(1){
+                background-color: whitesmoke;
+            }
+            &:nth-child(2){
+                background-color: #333;
+            }
+            &:nth-child(3){
+                background-color: $maincolor;
+            }
+            &:nth-child(4){
+                background-color: darkblue;
+            }
         }
     }
 }
