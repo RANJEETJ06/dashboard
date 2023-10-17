@@ -1,0 +1,53 @@
+@import "../../../global.scss";
+
+.datatable{
+    padding: 20px;
+    .cellWithImg{
+        display: flex;
+        align-items: center;
+        .cellImg{
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+    }
+}
+
+.cellAction{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+    .view{
+        padding: 2px 5px;
+        border-radius: 5px;
+        color: darkblue;
+        background-color: rgba(0,0,139,0.596);
+        font-size: 14px;
+        font-weight: 500;
+        width: max-content;
+        cursor: pointer;
+        &:hover{
+            background-color: darkblue;
+            color: white;
+            transition: all 0.4s ease-in;
+        }
+    }
+    .delete{
+        padding: 2px 5px;
+        border-radius: 5px;
+        color: crimson;
+        background-color: rgb(220,20,60,0.6);
+        font-size: 14px;
+        font-weight: 500;
+        width: max-content;
+        cursor: pointer;
+        &:hover{
+            background-color: crimson;
+            color: white;
+            transition: all 0.4s ease-in;
+        }
+    }
+}

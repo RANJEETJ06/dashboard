@@ -1,3 +1,8 @@
+@import "../../../global.scss";
 .list{
-    background-color: blueviolet;
+    display: flex;
+    width: 100%;
+    .listContainer{
+        flex: 6;
+    }
 }
