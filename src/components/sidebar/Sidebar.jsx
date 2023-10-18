@@ -12,8 +12,11 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import LogoutIcon from "@mui/icons-material/Logout";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { DarkmodeContext } from "../../context/darkmodeConext";
 
 const Sidebar = () => {
+  const { dispatch } = useContext(DarkmodeContext);
   return (
     <div className="sidebar">
       <div className="top">
@@ -25,10 +28,12 @@ const Sidebar = () => {
       <div className="center">
         <ul>
           <p className="title">MAIN</p>
-          <li>
-            <DashboardIcon className="icons" />
-            <span>Dashboard</span>
-          </li>
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <li>
+              <DashboardIcon className="icons" />
+              <span>Dashboard</span>
+            </li>
+          </Link>
           <p className="title">LISTS</p>
           <Link to="/users" style={{ textDecoration: "none" }}>
             <li>
@@ -37,10 +42,10 @@ const Sidebar = () => {
             </li>
           </Link>
           <Link to="/product" style={{ textDecoration: "none" }}>
-          <li>
-            <Inventory2Icon className="icons" />
-            <span>Stocks</span>
-          </li>
+            <li>
+              <Inventory2Icon className="icons" />
+              <span>Stocks</span>
+            </li>
           </Link>
           <li>
             <CreditCardIcon className="icons" />
@@ -84,10 +89,14 @@ const Sidebar = () => {
         </ul>
       </div>
       <div className="bottom">
-        <div className="colorOption"></div>
-        <div className="colorOption"></div>
-        <div className="colorOption"></div>
-        <div className="colorOption"></div>
+        <div
+          className="colorOption"
+          onClick={() => dispatch({ type: "LIGHT" })}
+        ></div>
+        <div
+          className="colorOption"
+          onClick={() => dispatch({ type: "DARK" })}
+        ></div>
       </div>
     </div>
   );

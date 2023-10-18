@@ -1,0 +1,67 @@
+@import "../../global.scss";
+.app{
+    transition: all 0.7s ease-out;
+}
+.app.dark{
+    transition: all 0.7s ease-in;
+    background-color: #222;
+    color: whitesmoke;
+    .chartGrid{
+        stroke: whitesmoke;
+    }
+    .table{
+        background-color: #111;
+        color: gray;
+        .tableCell{
+            color: gray;
+        }
+    }
+    .navbar{
+        color: #999;
+        input{
+            color: whitesmoke;
+        }
+    }
+    .sidebar{
+        hr{
+            display: none;
+        }
+        background-color: #111;
+        border-color: #333;
+        .top{
+            .logo{
+                color: #999;
+            }    
+        }
+        .center{
+            ul{
+                li{
+                    &:hover{
+                        background-color: #444;
+                    }
+                    .icons{
+                        color: #999;
+                    }
+                }
+            }
+        }
+    }
+    .datatable{
+        color: #999;
+        .MuiDataGrid-root{
+            color: gray;
+        }
+        .view,.delete{
+            color: #999;
+            &:hover{
+                color: white;
+                font-weight: 500;
+            }
+        }
+    }
+    .new{
+        .right input{
+            background-color: #444;
+        }
+    }
+}

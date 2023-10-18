@@ -40,6 +40,9 @@
                 align-items: center;
                 margin-right: 20px;
                 position: relative;
+                &.active{
+                    display: none;
+                }
                 .icon{
                     font-size: 20px;
                 }
