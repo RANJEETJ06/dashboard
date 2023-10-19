@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/RANJEETJ06/dashboard/static/css/main.61f14f8c.css",
-    "main.js": "/RANJEETJ06/dashboard/static/js/main.45e60928.js",
-    "index.html": "/RANJEETJ06/dashboard/index.html",
-    "main.61f14f8c.css.map": "/RANJEETJ06/dashboard/static/css/main.61f14f8c.css.map",
-    "main.45e60928.js.map": "/RANJEETJ06/dashboard/static/js/main.45e60928.js.map"
+    "main.css": "/dashboard/static/css/main.61f14f8c.css",
+    "main.js": "/dashboard/static/js/main.45e60928.js",
+    "index.html": "/dashboard/index.html",
+    "main.61f14f8c.css.map": "/dashboard/static/css/main.61f14f8c.css.map",
+    "main.45e60928.js.map": "/dashboard/static/js/main.45e60928.js.map"
   },
   "entrypoints": [
     "static/css/main.61f14f8c.css",
