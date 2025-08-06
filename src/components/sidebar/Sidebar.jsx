@@ -21,7 +21,7 @@ const Sidebar = () => {
     <div className="sidebar">
       <div className="top">
         <Link to="/" style={{ textDecoration: "none" }}>
-          <span className="logo">.rkj</span>
+          <span className="logo">Twins</span>
         </Link>
       </div>
       <hr />
